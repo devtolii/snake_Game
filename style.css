@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(rgb(185, 105, 105),rgb(74, 74, 242),rgb(72, 246, 72), rgb(240, 113, 113));
+  align-items: center;
+
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#gameContainer {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameBoard {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  animation: borderAnimation 9s infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+      border-color: white;
+  }
+  25% {
+      border-color: yellowgreen;
+  }
+  50% {
+      border-color: gray;
+  }
+  75% {
+      border-color: rgb(44, 44, 216);
+  }
+  100% {
+      border-color: rgb(34, 9, 193);
+  }
+}
+#scoreText {
+  font-size: 50px;
+  margin: 10px;
+  color: white;
+}
+#resetBtn {
+  margin: 10px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: 3px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+#resetBtn:hover {
+  background: transparent;
+  color: white;
+  border: 3px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
